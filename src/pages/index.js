@@ -1,9 +1,9 @@
-import Home from './Home'
+import Blog from './Blog'
 import Login from './Login'
 import CreatePost from './CreatePost'
 
 export {
-    Home,
+    Blog,
     Login,
     CreatePost,
 
