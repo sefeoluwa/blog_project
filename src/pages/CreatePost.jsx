@@ -1,3 +1,5 @@
+/* eslint-disable react-hooks/exhaustive-deps */
+/* eslint-disable react/prop-types */
 import { useState, useEffect } from "react"
 import { addDoc, collection } from 'firebase/firestore'
 import { db, auth } from '../firebase-config'
@@ -12,7 +14,11 @@ function CreatePost({ isAuth }) {
 
   const postCollectionRef = collection(db, "posts")
   const createPost = async () => {
-    await addDoc(postCollectionRef, { title, postText, author: {name: auth.currentUser.displayName, id: auth.currentUser.uid} })
+    await addDoc(postCollectionRef, { 
+      title, 
+      postText,
+      author: { name: auth.currentUser.displayName, id: auth.currentUser.uid } 
+    })
     navigate('/')
   }
 
