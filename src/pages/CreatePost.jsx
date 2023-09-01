@@ -1,15 +1,19 @@
 import { useState } from "react"
 import { addDoc, collection } from 'firebase/firestore'
 import { db, auth } from '../firebase-config'
+import { useNavigate } from "react-router-dom";
 
 function CreatePost() {
 
   const [title, setTitle] = useState("");
   const [postText, setPostText] = useState("")
 
+  let navigate = useNavigate()
+
   const postCollectionRef = collection(db, "posts")
   const createPost = async () => {
     await addDoc(postCollectionRef, { title, postText, author: {name: auth.currentUser.displayName, id: auth.currentUser.uid} })
+    navigate('/')
   }
 
   return (
@@ -33,7 +37,7 @@ function CreatePost() {
         }}
         />
       </div>
-      <button>Submit Post</button>
+      <button onClick={createPost}>Submit Post</button>
     </div>
     </div>
   )
