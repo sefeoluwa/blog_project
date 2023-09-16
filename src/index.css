@@ -27,6 +27,24 @@ border: 1px solid rgba(96, 6, 145, 0.3);
 position: fixed;
 z-index: 10;
 }
+
+.login-btn{
+  width: 120px;
+  font-size: 18px;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  transition: all .2s ease;
+}
+
+.login-btn:hover{
+  background: rgba(59, 50, 91, 0.66);
+  color: #fff;
+  font-weight: 600;
+  padding: 8px;
+}
   
  a {
     color: #fff;
