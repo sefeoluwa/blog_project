@@ -226,3 +226,11 @@ z-index: 10;
     overflow: hidden;
     overflow-y: auto;
   }
+
+  @media screen and (min-width: 700px) {
+    
+    .cpContainer button{
+      width: 30vw;
+      margin-left: 20vw;
+    }
+  }
