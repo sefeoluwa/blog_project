@@ -63,10 +63,10 @@ z-index: 10;
   }
   
   .cpContainer {
-    width: 500px;
+    width: 70vw;
     height: auto;
     padding: 20px;
-    background-color: black;
+    background-color: rgba(59, 50, 91, 0.66);
     border-radius: 12px;
     color: white;
     display: flex;
