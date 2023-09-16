@@ -30,6 +30,7 @@ z-index: 10;
 
 .login-btn{
   width: 120px;
+  height: 32px;
   font-size: 18px;
   padding: 5px;
   border-radius: 10px;
@@ -43,7 +44,6 @@ z-index: 10;
   background: rgba(59, 50, 91, 0.66);
   color: #fff;
   font-weight: 600;
-  padding: 8px;
 }
   
  a {
@@ -92,6 +92,7 @@ z-index: 10;
     border: none;
     border-radius: 2px;
     padding: 5px;
+    outline: none;
   }
   
   .inputGp input {
@@ -108,7 +109,16 @@ z-index: 10;
     border-radius: 5px;
     cursor: pointer;
     font-size: 18px;
+    transition: all .2s ease;
   }
+
+  .cpContainer button:hover{
+    background: rgba(59, 50, 91, 0.66);
+    color: #fff;
+    font-weight: 600;
+    padding: 8px;
+  }
+
   input,
   textarea {
     margin-top: 5px;
