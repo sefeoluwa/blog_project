@@ -199,11 +199,13 @@ z-index: 10;
     display: flex;
     justify-content: center;
     width: 100%;
+    flex-wrap: wrap;
   }
   
   .postHeader .title {
-    flex: 70%;
+    flex: 50%;
   }
+
   .postHeader .deletePost {
     flex: 50%;
     display: flex;
@@ -220,7 +222,7 @@ z-index: 10;
   }
   
   .post .postTextContainer {
-    height: auto;
+    height: 60%;
     max-height: 400px;
     width: 100%;
     font-size: 18px;
@@ -234,5 +236,25 @@ z-index: 10;
     .cpContainer button{
       width: 30vw;
       margin-left: 20vw;
+    }
+  }
+
+  @media screen and (max-width: 660px) {
+    .postHeader .deletePost{
+      align-items: flex-start;
+      padding-bottom: 15px;
+    }
+
+    .homePage .post{
+      padding-bottom: 8vh;
+    }
+
+    
+  }
+
+  @media screen and (max-width: 1000px){
+
+    .homePage .post{
+      padding-bottom: 8vh;
     }
   }
