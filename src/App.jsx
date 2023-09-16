@@ -27,7 +27,7 @@ function App() {
         ) : ( 
         <>
           <Link to='/createpost'>Create Post</ Link>
-        <button onClick={signUserOut}>Sign Out</button>
+        <button onClick={signUserOut} className="login-btn">Sign Out</button>
         </>
         )}
       </nav>
