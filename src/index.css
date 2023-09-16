@@ -71,6 +71,7 @@ z-index: 10;
     color: white;
     display: flex;
     flex-direction: column;
+    margin-top: 13vh;
   }
   
   .cpContainer h1 {
@@ -93,13 +94,13 @@ z-index: 10;
     border-radius: 2px;
     padding: 5px;
     outline: none;
-  }
+  } 
   
   .inputGp input {
     height: 40px;
   }
   .inputGp textarea {
-    height: 150px;
+    height: 42vh;
   }
   
   .cpContainer button {
@@ -219,12 +220,13 @@ z-index: 10;
   }
   
   .post .postTextContainer {
-    word-wrap: break-word;
     height: auto;
     max-height: 400px;
     width: 100%;
+    font-size: 18px;
     overflow: hidden;
     overflow-y: auto;
+    scroll-behavior: smooth;
   }
 
   @media screen and (min-width: 700px) {
